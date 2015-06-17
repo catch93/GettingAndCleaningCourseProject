@@ -1,16 +1,23 @@
 
-#Data Dictionary - Tidy Dataset produced by run.analysis.R
+#Data Dictionary - Tidy Dataset produced by run.analysis.R#
 
-  ###Subject         -   Code for the Subject that perform the activity ( Subject are coded from 1 - 30 )
-  ###Activity Code   -   Activity Code for the certain activity perform ( Activity Code Domain: 1 - 6   ) 
-  ###Activity Name   -   Descriptive Name for the activity perform 
+  ####Subject         -   Code for the Subject that perform the activity ( Subject are coded from 1 - 30 ) ####
+  ####Activity Code   -   Activity Code for the certain activity perform ( Activity Code Domain: 1 - 6   ) ####
+  ####Activity Name   -   Descriptive Name for the activity perform ####
 
 
 General Overview of Features:
 
-    The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
-    Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
-    Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+    The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and
+    tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were
+    filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove
+    noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and
+    tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+    Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+    (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the
+    Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+    Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ,
+    fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
     These signals were used to estimate variables of the feature vector for each pattern:  
     '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
   
@@ -84,23 +91,23 @@ The next set of columns revolves around Features that revolves chosen Features t
 ###fBodyAccJerk-mean()-X
 ###fBodyAccJerk-mean()-Y
 
-347 fBodyAccJerk-mean()-Z
-348 fBodyAccJerk-std()-X
-349 fBodyAccJerk-std()-Y
-350 fBodyAccJerk-std()-Z
-424 fBodyGyro-mean()-X
-425 fBodyGyro-mean()-Y
+###fBodyAccJerk-mean()-Z
+###fBodyAccJerk-std()-X
+###fBodyAccJerk-std()-Y
+###fBodyAccJerk-std()-Z
+###fBodyGyro-mean()-X
+###fBodyGyro-mean()-Y
 
-426 fBodyGyro-mean()-Z
-427 fBodyGyro-std()-X
-428 fBodyGyro-std()-Y
-429 fBodyGyro-std()-Z
-503 fBodyAccMag-mean()
-504 fBodyAccMag-std()
+###fBodyGyro-mean()-Z
+###fBodyGyro-std()-X
+###fBodyGyro-std()-Y
+###fBodyGyro-std()-Z
+###fBodyAccMag-mean()
+###fBodyAccMag-std()
 
-516 fBodyBodyAccJerkMag-mean()
-517 fBodyBodyAccJerkMag-std()
-529 fBodyBodyGyroMag-mean()
-530 fBodyBodyGyroMag-std()
-542 fBodyBodyGyroJerkMag-mean()
-543 fBodyBodyGyroJerkMag-std()
+###fBodyBodyAccJerkMag-mean()
+###fBodyBodyAccJerkMag-std()
+###fBodyBodyGyroMag-mean()
+###fBodyBodyGyroMag-std()
+###fBodyBodyGyroJerkMag-mean()
+###fBodyBodyGyroJerkMag-std()
