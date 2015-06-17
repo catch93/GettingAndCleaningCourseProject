@@ -22,20 +22,18 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 The run_analysis.R code performs the following series of steps listed below to produce a tidy dataset that would contain the average of all the mean and standard deviation for the time and frequency domain variables per subject and per activity.
 
-
-
 Code : run_analysis.R 
  This program should run analysis on the UCI HAR Dataset and outputs the mean 
  for all the Mean and Standard Deviation Features collected for Each Subject and Each Activity 
  The input dataset should reside at the working directory 
- Input  : Training data : X_train.txt, y_train.txt, subject_train.txt
-          Test     data : X_test.txt,  y_test.txt,  subject_test.txt
- Output : tidy_dataset_step5.txt 
-          -> contains the mean per subject per activity for all features containing Mean
-          -> and Standard Deviation 
+ Input Datasets : 
+ Training data : X_train.txt, y_train.txt, subject_train.txt
+ Test     data : X_test.txt,  y_test.txt,  subject_test.txt
+ Output : tidy_dataset_step5.txt
+ The tidy dataset contains the mean per subject per activity for all features containing Mean and Standard Deviation 
+
 
 General Overview of the Process:
-
 
     1. Reads and combines the 561-features training and testing data
     2. Reads and combines the subject training and subject testing data
@@ -50,13 +48,11 @@ General Overview of the Process:
     10. Write the result produced by Step 9 in a tidy dataset.
     
     
-How to access the read the tidy dataset produced by run.analysis.R 
+====================================================================
+How to access the read the tidy dataset produced by run.analysis.R
 
-===================================================================
-The output produced by run_analysis.R can be accessed using the following code and loaded in R.
-   #####address <- "https://s3.amazonaws.com/coursera-uploads/user-e6649e00cf98a46fc3b415c7/973502/asst-3/2292ae00149c11e59ac44181c566234e.txt"
-   #####address <- sub("^https", "http", address)
-   #####data <- read.csv(url(address),header=TRUE, sep="",quote="\"")
-   #####View(data)
-
-===========================================================================
+    address <- "https://s3.amazonaws.com/coursera-uploads/user-e6649e00cf98a46fc3b415c7/973502/asst-3/2292ae00149c11e59ac44181c566234e.txt"
+    address <- sub("^https", "http", address)
+    data <- read.csv(url(address),header=TRUE, sep="",quote="\"")
+    View(data)
+==========================================================================
