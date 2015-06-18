@@ -30,10 +30,17 @@ General Overview of Features:
     fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
     These signals were used to estimate variables of the feature vector for each pattern:  
     '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+    Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals 
+    (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using 
+    the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+    Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ,
+    fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.  (Note the 'f' to indicate frequency domain signals). 
+    These signals were used to estimate variables of the feature vector for each pattern:  
+    '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
   
 ========================================================================
 
-###The next set of columns revolves around Features that revolves chosen Features that revolve around mean and standard deviation for each of the features that was captured.###
+###The next set of columns revolves around Aggregated Means and Aggregated Standard Deviations meansurements (in the time and frequency domains) in a 3-axial dimensions that were captured for the different subjects performing the various activities. ###
 
 ###Body Accelerometer Aggregated Mean Measurements in the 3-axial raw signals for the time domain for a particular subject performing a specific activity    
           tBodyAcc-mean()-X
@@ -53,11 +60,6 @@ General Overview of Features:
         tGravityAcc-std()-X
         tGravityAcc-std()-Y
         tGravityAcc-std()-Z
-
-    Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals 
-    (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using 
-    the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
-
 
 ###Linear Accelration and Angular Velocity in time domaim for Jerk Signals - Aggregated Mean and Standard Deviation for a particular subject performing a specific activity 
 
@@ -93,10 +95,6 @@ General Overview of Features:
         tBodyGyroJerkMag-mean()
         tBodyGyroJerkMag-std()
 
-    Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ,
-    fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.  (Note the 'f' to indicate frequency domain signals). 
-    These signals were used to estimate variables of the feature vector for each pattern:  
-    '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 ### Fast Fourier Trasnfrom (FFT) applied for frequency domain signals - Aggregated Mean and Standard Deviations for a specific subject performing a specific activity 
 
