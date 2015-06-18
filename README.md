@@ -4,8 +4,8 @@
 This repository includes all the necessary things needed to understand the purpose of the run_analysis.R code 
 =================================================================
 The run.analysis.R code works on the different files provided by 
-Human Activity Recognition Using Smartphones Dataset Version 1.0. 
 
+Human Activity Recognition Using Smartphones Dataset Version 1.0. 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
 License:
