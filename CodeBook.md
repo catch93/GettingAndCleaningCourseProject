@@ -1,9 +1,18 @@
 
-#Data Dictionary - Tidy Dataset produced by run.analysis.R#
+  #Data Dictionary - Tidy Dataset produced by run.analysis.R#
 
-  ####Subject         -   Code for the Subject that perform the activity ( Subject are coded from 1 - 30 ) ####
-  ####Activity Code   -   Activity Code for the certain activity perform ( Activity Code Domain: 1 - 6   ) ####
-  ####Activity Name   -   Descriptive Name for the activity perform ####
+  ##Subject##         -   Code designating the Subject performing the activity 
+  ( Subject are coded from 1 - 30 ) 
+  ##Activity Code##    -  Code designating the activity being perform 
+  ( Activity Code Domain: 1 - 6   ) ####
+  ##Activity Name##    -   Description pertaining to the activity being perform 
+  (Activity Name : 
+                    1 WALKING
+                    2 WALKING_UPSTAIRS
+                    3 WALKING_DOWNSTAIRS
+                    4 SITTING
+                    5 STANDING
+                    6 LAYING 
 
 
 General Overview of Features:
@@ -24,12 +33,14 @@ General Overview of Features:
 ========================================================================
 The next set of columns revolves around Features that revolves chosen Features that revolve around mean and standard deviation for each of the features that was captured.
 
-###tBodyAcc-mean()-X
-###tBodyAcc-mean()-Y
-###tBodyAcc-mean()-Z
-###tBodyAcc-std()-X
-###tBodyAcc-std()-Y
-###tBodyAcc-std()-Z
+###Body Accelerometer Mean Measurements in the 3-axial raw signals for the time domain   
+          tBodyAcc-mean()-X
+          tBodyAcc-mean()-Y
+          tBodyAcc-mean()-Z
+###Body Accelerometer Standard Deviation Measurements in the 3-axial raw signals for the time domain   
+        tBodyAcc-std()-X
+        tBodyAcc-std()-Y
+        tBodyAcc-std()-Z
 
 ###tGravityAcc-mean()-X
 ###tGravityAcc-mean()-Y
