@@ -35,21 +35,21 @@ Code : run_analysis.R
 
 General Overview of the Process:
 
-    1. Reads and combines the 561-features training and testing data
-    2. Reads and combines the subject training and subject testing data
-    3. Apply column names "Subject" for the combined subject dataset
-    4. Reads the features file and apply them as the column names for the combined features dataset 
-    5. Read the activity labels dataset and apply column names "Activity Code" and "Activity Name"
-    6. Read the activity information for all the subject and determine the "Activity Name" for each activity information by
-    merging the activity labels read in Step 5.
-    7. Create one dataset for all the combined datasets created  : features, subject and activity 
-    8. Extract only the columns that contain the mean and standard deviation features for the entire dataset (training and test)
-    9. Aggregate the mean for all the features selected per subject and activity 
-    10. Write the result produced by Step 9 in a tidy dataset.
+   1. Reads and combines the 561-features training and testing data
+   2. Reads and combines the subject training and subject testing data
+   3. Apply column names "Subject" for the combined subject dataset
+   4. Reads the features file and apply them as the column names for the combined features dataset 
+   5. Read the activity labels dataset and apply column names "Activity Code" and "Activity Name"
+   6. Read the activity information for all the subject and determine the "Activity Name" for each activity information by
+   merging the activity labels read in Step 5.
+   7. Create one dataset for all the combined datasets created  : features, subject and activity 
+   8. Extract only the columns that contain the mean and standard deviation features for the entire dataset (training and test)
+   9. Aggregate the mean for all the features selected per subject and activity 
+   10. Write the result produced by Step 9 in a tidy dataset.
     
     
 ====================================================================
-How to access the read the tidy dataset produced by run.analysis.R
+How to access or read the tidy dataset produced by run.analysis.R in R or R Studio
 
     address <- "https://s3.amazonaws.com/coursera-uploads/user-e6649e00cf98a46fc3b415c7/973502/asst-3/2292ae00149c11e59ac44181c566234e.txt"
     address <- sub("^https", "http", address)
